@@ -1,0 +1,15 @@
+product = {'pen':{'price':70,'color':'red',},
+            'eraser':{'price':20,'color':'green'},
+            'colorpen':{'price':200,'color':'orange'}}
+
+while True:
+    print('---Please fill in the required information---')
+    p = input('product name:  ')
+    print('-----')
+    q = int(input('amount: '))
+    if p in product: 
+        print(f'product: {p} \nprice: {product[p]['price']} baht \ncolor: {product[p]['color']}')
+        print(f'amount: {q} \npiece(s) total: {product[p]['price'] * q} baht')
+    else:
+        print('This product is not available')
+    # ออกจาก loop > ctrl + c (ตอนรัน)
